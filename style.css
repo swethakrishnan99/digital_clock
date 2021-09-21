@@ -1,0 +1,185 @@
+body {
+  background-color: rgb(50, 1, 95);
+}
+#head {
+  display: flex;
+  justify-content: center;
+}
+#body {
+  display: flex;
+  justify-content: center;
+}
+.clock_img {
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+}
+.clock_img img {
+  width: 90px;
+  height: 90px;
+}
+.clock {
+  font-family: "Righteous", cursive;
+  font-weight: 700;
+  width: 650px;
+  height: 200px;
+  font-size: 50px;
+  color: white;
+  display: flex;
+}
+.heading {
+  line-height: 200px;
+}
+.clock p {
+  margin: 10px 20px;
+}
+.set_time {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 50px;
+}
+.remainder {
+  line-height: 70px;
+  color: rgb(99, 44, 151);
+  font-size: 24px;
+}
+.vertical_line {
+  width: 2px;
+  height: 40px;
+  margin-left: 15px;
+  background-color: rgb(189, 186, 186);
+}
+label > span {
+  padding: 0px 40px;
+}
+label > i {
+  font-size: 35px;
+}
+label > select {
+  height: 50px;
+  width: 13vw;
+  float: right;
+  margin-top: 25px;
+  color: rgb(99, 44, 151);
+  font-size: 15px;
+  padding: 5px;
+  border: 0.5px solid rgb(216, 213, 213);
+  background-color: white;
+  outline: none;
+}
+option {
+  color: black;
+}
+.box {
+  background-color: rgb(99, 44, 151);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.box1 {
+  font-family: "Righteous", cursive;
+  margin-left: 50px;
+}
+.party_time {
+  color: white;
+  background: linear-gradient(to left, violet 55%, blueviolet);
+  border-radius: 2px;
+  width: 250px;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  margin-left: 50px;
+}
+.party_time:hover {
+  background: linear-gradient(to right, violet 55%, blueviolet);
+}
+.violet {
+  width: 400px;
+  height: 90px;
+  background-color: blueviolet;
+  position: absolute;
+  z-index: -2;
+}
+.pink {
+  width: 450px;
+  height: 80px;
+  background-color: rgba(252, 225, 252, 0.781);
+  position: absolute;
+  z-index: -1;
+}
+.white {
+  width: 600px;
+  height: 150px;
+  margin: 50px 0 50px 50px;
+  box-sizing: border-box;
+  color: rgb(99, 44, 151);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.time {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(226, 139, 243, 0.61);
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 0px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: normal;
+}
+.time1 {
+  background: linear-gradient(to top, violet 20%, blueviolet);
+  color: white;
+}
+.image {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 50px 50px 10px 50px;
+}
+.image span {
+  color: rgb(163, 104, 219);
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+  font-weight: 700;
+  line-height: 80px;
+}
+.image img {
+  width: 600px;
+  height: 500px;
+}
+.white span {
+  line-height: 100px;
+}
+.time .big {
+  font-size: 50px;
+  display: block;
+  line-height: 80px;
+}
+@media only screen and (max-width: 1325px) {
+  #head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
