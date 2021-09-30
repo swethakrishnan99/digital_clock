@@ -29,37 +29,55 @@
             <span>
                 Time
             </span>
-            <div class="time"><span class="big">10</span>hours</div>
+            <div class="time"><span class="big" id="hr">&nbsp;</span>hours</div>
             <span>
                 :
             </span>
-            <div class="time"><span class="big">45</span>mins</div>
+            <div class="time"><span class="big" id="min">&nbsp;</span>mins</div>
             <span>
                 :
             </span>
-            <div class="time"><span class="big">01</span>secs</div>
+            <div class="time"><span class="big" id="secs">&nbsp;</span>secs</div>
             <span>
                 :
             </span>
-            <div class="time time1"><span class="big">AM</span></div>
+            <div class="time time1"><span class="big" id="am_pm">&nbsp;</span></div>
             <div class="pink box"></div>
             <div class="violet box"></div>
         </div>
     </div>
     <div id="body">
-        <div>
+         <div>
             <div class="set_time">
                 <div class="remainder">
                     <label>
                         <i class="fas fa-sun"></i>
                         <span>Set wake up time</span>
-                        <select name="time" id="time">
-                            <option value="8-9">
-                                <div class="option">8 AM- 9 AM</div>
-                            </option>
-                            <option value="9-10">9 AM- 10 AM</option>
-                            <option value="10-11">10 AM- 11 AM</option>
-                            <option value="11-12">11 AM- 12 AM</option>
+                        <select name="time" id="wakeup" onmouseover="wakeupOver()" onmouseout="setImage()" onchange="optDisable1()">
+                            <option value="0">12 AM- 01 AM</option>
+                            <option value="1">01 AM- 02 AM</option>
+                            <option value="2">02 AM- 03 AM</option>
+                            <option value="3">03 AM- 04 PM</option>
+                            <option value="4">04 PM- 05 PM</option>
+                            <option value="5">05 AM- 06 AM</option>
+                            <option value="6">06 AM- 07 AM</option>
+                            <option value="7">07 AM- 08 AM</option>
+                            <option value="8" selected>08 AM- 09 AM</option>
+                            <option value="9">09 AM- 10 AM</option>
+                            <option value="10">10 AM- 11 AM</option>
+                            <option value="11">11 AM- 12 PM</option>
+                            <option value="12">12 PM- 01 PM</option>
+                            <option value="13" disabled>01 PM- 02 PM</option>
+                            <option value="14">02 PM- 03 PM</option>
+                            <option value="15">03 PM- 04 PM</option>
+                            <option value="16">04 PM- 05 PM</option>
+                            <option value="17">05 PM- 06 PM</option>
+                            <option value="18">06 PM- 07 PM</option>
+                            <option value="19">07 PM- 08 PM</option>
+                            <option value="20">08 PM- 09 PM</option>
+                            <option value="21">09 PM- 10 PM</option>
+                            <option value="22" disabled>10 PM- 11 PM</option>
+                            <option value="23">11 PM- 12 AM</option>
                         </select>
                     </label>
                 </div>
@@ -69,11 +87,31 @@
                     <label>
                         <i class="fas fa-utensils"></i>
                         <span>Set lunch time</span>
-                        <select name="time" id="time">
-                            <option value="8-9">8 AM- 9 AM</option>
-                            <option value="9-10">9 AM- 10 AM</option>
-                            <option value="10-11">10 AM- 11 AM</option>
-                            <option value="11-12">11 AM- 12 AM</option>
+                        <select name="time" id="lunch" onmouseover="lunchOver()" onmouseout="setImage()" onchange="optDisable2()">
+                            <option value="0">12 AM- 01 AM</option>
+                            <option value="1">01 AM- 02 AM</option>
+                            <option value="2">02 AM- 03 AM</option>
+                            <option value="3">03 AM- 04 PM</option>
+                            <option value="4">04 PM- 05 PM</option>
+                            <option value="5">05 AM- 06 AM</option>
+                            <option value="6">06 AM- 07 AM</option>
+                            <option value="7">07 AM- 08 AM</option>
+                            <option value="8" disabled>08 AM- 09 AM</option>
+                            <option value="9">09 AM- 10 AM</option>
+                            <option value="10">10 AM- 11 AM</option>
+                            <option value="11">11 AM- 12 PM</option>
+                            <option value="12">12 PM- 01 PM</option>
+                            <option value="13" selected>01 PM- 02 PM</option>
+                            <option value="14">02 PM- 03 PM</option>
+                            <option value="15">03 PM- 04 PM</option>
+                            <option value="16">04 PM- 05 PM</option>
+                            <option value="17">05 PM- 06 PM</option>
+                            <option value="18">06 PM- 07 PM</option>
+                            <option value="19">07 PM- 08 PM</option>
+                            <option value="20">08 PM- 09 PM</option>
+                            <option value="21">09 PM- 10 PM</option>
+                            <option value="22" disabled>10 PM- 11 PM</option>
+                            <option value="23">11 PM- 12 PM</option>
                         </select>
                     </label>
                 </div>
@@ -82,27 +120,49 @@
                 <div class="remainder"><label>
                     <i class="fas fa-bed"></i>
                     <span>Set nap time</span>
-                    <select name="time" id="time">
-                        <option value="8-9">8 AM- 9 AM</option>
-                        <option value="9-10">9 AM- 10 AM</option>
-                        <option value="10-11">10 AM- 11 AM</option>
-                        <option value="11-12">11 AM- 12 AM</option>
+                    <select name="time" id="nap" onmouseover="napOver()" onmouseout="setImage()" onchange="optDisable3()">
+                        <option value="0">12 AM- 01 AM</option>
+                        <option value="1">01 AM- 02 AM</option>
+                        <option value="2">02 AM- 03 AM</option>
+                        <option value="3">03 AM- 04 PM</option>
+                        <option value="4">04 PM- 05 PM</option>
+                        <option value="5">05 AM- 06 AM</option>
+                        <option value="6">06 AM- 07 AM</option>
+                        <option value="7">07 AM- 08 AM</option>
+                        <option value="8" disabled>08 AM- 09 AM</option>
+                        <option value="9">09 AM- 10 AM</option>
+                        <option value="10">10 AM- 11 AM</option>
+                        <option value="11">11 AM- 12 PM</option>
+                        <option value="12">12 PM- 01 PM</option>
+                        <option value="13" disabled>01 PM- 02 PM</option>
+                        <option value="14">02 PM- 03 PM</option>
+                        <option value="15">03 PM- 04 PM</option>
+                        <option value="16">04 PM- 05 PM</option>
+                        <option value="17">05 PM- 06 PM</option>
+                        <option value="18">06 PM- 07 PM</option>
+                        <option value="19">07 PM- 08 PM</option>
+                        <option value="20">08 PM- 09 PM</option>
+                        <option value="21">9 PM- 10 PM</option>
+                        <option value="22" selected>10 PM- 11 PM</option>
+                        <option value="23">11 PM- 12 PM</option>
+                        
                     </select>
                 </label>
                 </div>
             </div>
-            <div class="box box1">
+            <div class="box box1" id ="box" >
                 GOOD AFTERNOON !!
             </div>
-            <div class="party_time">
+            <button class="party_time" onclick=partyImage()>
                 Party time!
-            </div>
+            </button>
         </div>
          <div class="image">
-            <span> &emsp; LET'S HAVE SOME LUNCH !!</span>
-            <img src="images/lunch.jpg" alt="lunch">
+            &emsp;<span id="caption"> LET'S HAVE SOME LUNCH !!</span>
+            <img src="images/lunch.jpg" id ="image" alt="lunch">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 

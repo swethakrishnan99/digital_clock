@@ -90,6 +90,9 @@ option {
   font-family: "Righteous", cursive;
   margin-left: 50px;
 }
+#box {
+  display: none;
+}
 .party_time {
   color: white;
   background: linear-gradient(to left, violet 55%, blueviolet);
@@ -100,7 +103,7 @@ option {
   text-align: center;
   font-size: 25px;
   font-weight: normal;
-  margin-left: 50px;
+  margin: 40px 50px;
 }
 .party_time:hover {
   background: linear-gradient(to right, violet 55%, blueviolet);
@@ -181,5 +184,36 @@ option {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .clock_img {
+    width: 8vw;
+    height: 8vw;
+  }
+  .clock_img img {
+    width: 8vw;
+    height: 8vw;
+  }
+  .clock {
+    font-family: "Righteous", cursive;
+    width: 60vw;
+  }
+  .set_time {
+    width: 60vw;
+    margin-left: 0;
+  }
+  .image {
+    width: 65vw;
+    margin: 0;
+    margin-bottom: 40vh;
+  }
+  .image img {
+    width: 65vw;
+  }
+  .white {
+    width: 65vw;
+    margin-left: 0;
+  }
+  .party_time {
+    margin-left: 0;
   }
 }
