@@ -1,5 +1,6 @@
 //clock
-setInterval(clock,1000);
+setImage()
+setInterval(clock,100);
 function clock(){
     let time = new Date();
     let hr = time.getHours();
@@ -70,25 +71,7 @@ function setImage(){
     }
 }
 
-// change image when hover over select option
-function wakeupOver(){
-    let image = document.getElementById("image");
-    let caption = "     SET WAKE UP TIME !!";
-    document.getElementById("caption").innerHTML = caption;
-    image.src = "images/morning.jpg"; 
-}
-function lunchOver(){
-    let image = document.getElementById("image");
-    let caption = "     SET LUNCH TIME!!";
-    document.getElementById("caption").innerHTML = caption;
-    image.src = "images/lunch.jpg";
-}
-function napOver(){
-    let image = document.getElementById("image");
-    let caption = "     SET NAP TIME !!";
-    document.getElementById("caption").innerHTML = caption;
-    image.src = "images/sleep.jpg"; 
-}
+
 //change image when click on party
 function partyImage(){
     let image = document.getElementById("image");
