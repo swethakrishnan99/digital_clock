@@ -38,7 +38,7 @@ function setImage(){
     let lunch =parseInt(document.getElementById("lunch").value);
     let nap = parseInt(document.getElementById("nap").value);
     let x = document.getElementById("box");
-    if(hr24 == wakeup){
+    if(hr24 === wakeup){
         let image = document.getElementById("image");
         let caption = "     WAKE UP !!";
         document.getElementById("caption").innerHTML = caption;
@@ -74,10 +74,18 @@ function setImage(){
 
 //change image when click on party
 function partyImage(){
+    let party =document.getElementById("party");
     let image = document.getElementById("image");
-    let caption = "     LET'S HAVE SOME FUN !!";
-    document.getElementById("caption").innerHTML = caption;
-    image.src = "images/party.svg"; 
+    let caption = document.getElementById("caption");
+    if (party.innerHTML ==="Party time!"){
+        document.getElementById("party").innerHTML = "Party over!";
+        caption.innerHTML="LET'S HAVE SOME FUN";
+        image.src = "images/party.svg"; 
+    } 
+    else{
+        document.getElementById("party").innerHTML = "Party time!";
+        setImage();
+    }
     
 }
 
